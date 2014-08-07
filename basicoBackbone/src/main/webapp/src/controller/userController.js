@@ -25,7 +25,12 @@
         },
         save:function() { 
             var model = $('#userForm').serializeObject();
-            alert('El usuario '+ model['firstName'] + ' ' + model['lastName'] + ' nació el ' + model['date']);
+            var text = 'El usuario '+ model['firstName'] + ' ' + model['lastName'] + ' nació el ' + model['date'];
+            var response = document.createElement('div');
+            response.id = 'response';
+            document.body.appendChild(response);
+            response.setAttribute('style','width:89%; margin:auto;');
+            response.appendChild(document.createTextNode(text));
         },
         cancel: function(){
             alert('Cancel');
