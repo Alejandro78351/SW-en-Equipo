@@ -39,7 +39,7 @@ define(['component/_CRUDComponent', 'controller/toolbarController', 'model/toolb
             this.toolbarModel.set('refreshName', 'Refrescar');
             this.toolbarModel.set('showPrint', false);
             this.toolbarModel.set('showSearch', false);
-            this.toolbarModel.set('title', 'País');
+            this.toolbarModel.set('title', 'Arbitro');
             this.addButton({name: "Idioma", icon: "glyphicon-question-sign"}, function() {
                 self.componentController.language();
             });
