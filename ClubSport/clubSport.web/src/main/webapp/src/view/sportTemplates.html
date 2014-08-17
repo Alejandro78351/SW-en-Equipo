@@ -18,10 +18,10 @@
 		<td><%= htmlEncode(sport.getDisplay('maxAge')) %></td>
     <td>
     <% if(showEdit) {%>
-    <a onclick="Backbone.trigger('<%= componentId %>-sport-edit',{id:<%= sport.id %>}); return false" >Edit</a> |
+    <a onclick="Backbone.trigger('<%= componentId %>-sport-edit',{id:<%= sport.id %>}); return false" >Editar</a> |
 	<% } %> 
 	<% if(showDelete) {%>
-    <a onclick="Backbone.trigger('<%= componentId %>-sport-delete',{id:<%= sport.id %>}); return false" >Delete</a> 
+    <a onclick="Backbone.trigger('<%= componentId %>-sport-delete',{id:<%= sport.id %>}); return false" >Eliminar</a> 
 	<% } %>    
 	</td>
     </tr>

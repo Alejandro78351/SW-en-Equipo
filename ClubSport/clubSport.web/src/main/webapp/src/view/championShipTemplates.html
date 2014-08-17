@@ -18,10 +18,10 @@
 		<td><%= htmlEncode(championShip.getDisplay('endDate')) %></td>
     <td>
     <% if(showEdit) {%>
-    <a onclick="Backbone.trigger('<%= componentId %>-championShip-edit',{id:<%= championShip.id %>}); return false" >Edit</a> |
+    <a onclick="Backbone.trigger('<%= componentId %>-championShip-edit',{id:<%= championShip.id %>}); return false" >Editar</a> |
 	<% } %> 
 	<% if(showDelete) {%>
-    <a onclick="Backbone.trigger('<%= componentId %>-championShip-delete',{id:<%= championShip.id %>}); return false" >Delete</a> 
+    <a onclick="Backbone.trigger('<%= componentId %>-championShip-delete',{id:<%= championShip.id %>}); return false" >Eliminar</a> 
 	<% } %>    
 	</td>
     </tr>

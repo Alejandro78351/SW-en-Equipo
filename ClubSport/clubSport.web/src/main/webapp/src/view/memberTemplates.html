@@ -28,10 +28,10 @@
 		<td><%= htmlEncode(member.getDisplay('partnerId')) %></td>
     <td>
     <% if(showEdit) {%>
-    <a onclick="Backbone.trigger('<%= componentId %>-member-edit',{id:<%= member.id %>}); return false" >Edit</a> |
+    <a onclick="Backbone.trigger('<%= componentId %>-member-edit',{id:<%= member.id %>}); return false" >Editar</a> |
 	<% } %> 
 	<% if(showDelete) {%>
-    <a onclick="Backbone.trigger('<%= componentId %>-member-delete',{id:<%= member.id %>}); return false" >Delete</a> 
+    <a onclick="Backbone.trigger('<%= componentId %>-member-delete',{id:<%= member.id %>}); return false" >Eliminar</a> 
 	<% } %>    
 	</td>
     </tr>

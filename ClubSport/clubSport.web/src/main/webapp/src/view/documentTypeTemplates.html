@@ -16,10 +16,10 @@
 		<td><%= htmlEncode(documentType.getDisplay('length')) %></td>
     <td>
     <% if(showEdit) {%>
-    <a onclick="Backbone.trigger('<%= componentId %>-documentType-edit',{id:<%= documentType.id %>}); return false" >Edit</a> |
+    <a onclick="Backbone.trigger('<%= componentId %>-documentType-edit',{id:<%= documentType.id %>}); return false" >Editar</a> |
 	<% } %> 
 	<% if(showDelete) {%>
-    <a onclick="Backbone.trigger('<%= componentId %>-documentType-delete',{id:<%= documentType.id %>}); return false" >Delete</a> 
+    <a onclick="Backbone.trigger('<%= componentId %>-documentType-delete',{id:<%= documentType.id %>}); return false" >Eliminar</a> 
 	<% } %>    
 	</td>
     </tr>

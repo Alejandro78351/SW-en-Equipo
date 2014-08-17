@@ -18,10 +18,10 @@
 		<td><%= htmlEncode(address.getDisplay('cityId')) %></td>
     <td>
     <% if(showEdit) {%>
-    <a onclick="Backbone.trigger('<%= componentId %>-address-edit',{id:<%= address.id %>}); return false" >Edit</a> |
+    <a onclick="Backbone.trigger('<%= componentId %>-address-edit',{id:<%= address.id %>}); return false" >Editar</a> |
 	<% } %> 
 	<% if(showDelete) {%>
-    <a onclick="Backbone.trigger('<%= componentId %>-address-delete',{id:<%= address.id %>}); return false" >Delete</a> 
+    <a onclick="Backbone.trigger('<%= componentId %>-address-delete',{id:<%= address.id %>}); return false" >Eliminar</a> 
 	<% } %>    
 	</td>
     </tr>

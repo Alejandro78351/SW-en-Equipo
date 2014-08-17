@@ -14,10 +14,10 @@
 		<td><%= htmlEncode(prize.getDisplay('name')) %></td>
     <td>
     <% if(showEdit) {%>
-    <a onclick="Backbone.trigger('<%= componentId %>-prize-edit',{id:<%= prize.id %>}); return false" >Edit</a> |
+    <a onclick="Backbone.trigger('<%= componentId %>-prize-edit',{id:<%= prize.id %>}); return false" >Editar</a> |
 	<% } %> 
 	<% if(showDelete) {%>
-    <a onclick="Backbone.trigger('<%= componentId %>-prize-delete',{id:<%= prize.id %>}); return false" >Delete</a> 
+    <a onclick="Backbone.trigger('<%= componentId %>-prize-delete',{id:<%= prize.id %>}); return false" >Eliminar</a> 
 	<% } %>    
 	</td>
     </tr>

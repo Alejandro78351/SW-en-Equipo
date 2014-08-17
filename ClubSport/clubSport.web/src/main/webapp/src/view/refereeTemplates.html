@@ -26,10 +26,10 @@
 		<td><%= htmlEncode(referee.getDisplay('docNumber')) %></td>
     <td>
     <% if(showEdit) {%>
-    <a onclick="Backbone.trigger('<%= componentId %>-referee-edit',{id:<%= referee.id %>}); return false" >Edit</a> |
+    <a onclick="Backbone.trigger('<%= componentId %>-referee-edit',{id:<%= referee.id %>}); return false" >Editar</a> |
 	<% } %> 
 	<% if(showDelete) {%>
-    <a onclick="Backbone.trigger('<%= componentId %>-referee-delete',{id:<%= referee.id %>}); return false" >Delete</a> 
+    <a onclick="Backbone.trigger('<%= componentId %>-referee-delete',{id:<%= referee.id %>}); return false" >Eliminar</a> 
 	<% } %>    
 	</td>
     </tr>

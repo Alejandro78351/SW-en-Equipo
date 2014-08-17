@@ -16,10 +16,10 @@
 		<td><%= htmlEncode(country.getDisplay('population')) %></td>
     <td>
     <% if(showEdit) {%>
-    <a onclick="Backbone.trigger('<%= componentId %>-country-edit',{id:<%= country.id %>}); return false" >Edit</a> |
+    <a onclick="Backbone.trigger('<%= componentId %>-country-edit',{id:<%= country.id %>}); return false" >Editar</a> |
 	<% } %> 
 	<% if(showDelete) {%>
-    <a onclick="Backbone.trigger('<%= componentId %>-country-delete',{id:<%= country.id %>}); return false" >Delete</a> 
+    <a onclick="Backbone.trigger('<%= componentId %>-country-delete',{id:<%= country.id %>}); return false" >Eliminar</a> 
 	<% } %>    
 	</td>
     </tr>

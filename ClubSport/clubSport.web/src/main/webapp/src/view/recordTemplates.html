@@ -18,10 +18,10 @@
 		<td><%= htmlEncode(record.getDisplay('measureunitId')) %></td>
     <td>
     <% if(showEdit) {%>
-    <a onclick="Backbone.trigger('<%= componentId %>-record-edit',{id:<%= record.id %>}); return false" >Edit</a> |
+    <a onclick="Backbone.trigger('<%= componentId %>-record-edit',{id:<%= record.id %>}); return false" >Editar</a> |
 	<% } %> 
 	<% if(showDelete) {%>
-    <a onclick="Backbone.trigger('<%= componentId %>-record-delete',{id:<%= record.id %>}); return false" >Delete</a> 
+    <a onclick="Backbone.trigger('<%= componentId %>-record-delete',{id:<%= record.id %>}); return false" >Eliminar</a> 
 	<% } %>    
 	</td>
     </tr>
