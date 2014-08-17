@@ -153,7 +153,7 @@ define(['model/memberModel'], function(memberModel) {
             var model = $('#' + this.componentId + '-memberForm').serializeObject();
  
 			 if(!model.enable){
-			 	model.enable=false
+			 	model.enable=false;
 			 } 
             if (App.Utils.eventExists(this.componentId + '-' +'instead-member-save')) {
                 Backbone.trigger(this.componentId + '-' + 'instead-member-save', {view: this, model : model});
