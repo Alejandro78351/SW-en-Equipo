@@ -32,7 +32,18 @@ define(['component/_CRUDComponent', 'controller/toolbarController', 'model/toolb
         name: 'address',
         model: App.Model.AddressModel,
         listModel: App.Model.AddressList,
-        controller : App.Controller.AddressController
+        controller : App.Controller.AddressController,
+        postInit: function() {
+            var self = this;
+            this.toolbarModel.set('createName', 'Crear');
+            this.toolbarModel.set('refreshName', 'Refrescar');
+            this.toolbarModel.set('showPrint', false);
+            this.toolbarModel.set('showSearch', false);
+            this.toolbarModel.set('title', 'País');
+            this.addButton({name: "Idioma", icon: "glyphicon-question-sign"}, function() {
+                self.componentController.language();
+            });
+        }
     });
     return App.Component.AddressComponent;
 });

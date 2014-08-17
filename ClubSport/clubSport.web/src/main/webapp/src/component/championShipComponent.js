@@ -32,7 +32,18 @@ define(['component/_CRUDComponent', 'controller/toolbarController', 'model/toolb
         name: 'championShip',
         model: App.Model.ChampionShipModel,
         listModel: App.Model.ChampionShipList,
-        controller : App.Controller.ChampionShipController
+        controller : App.Controller.ChampionShipController,
+         postInit: function() {
+            var self = this;
+            this.toolbarModel.set('createName', 'Crear');
+            this.toolbarModel.set('refreshName', 'Refrescar');
+            this.toolbarModel.set('showPrint', false);
+            this.toolbarModel.set('showSearch', false);
+            this.toolbarModel.set('title', 'País');
+            this.addButton({name: "Idioma", icon: "glyphicon-question-sign"}, function() {
+                self.componentController.language();
+            });
+        }
     });
     return App.Component.ChampionShipComponent;
 });
